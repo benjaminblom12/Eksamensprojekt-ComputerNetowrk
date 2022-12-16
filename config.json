@@ -1,0 +1,16 @@
+{
+  "authentication": {
+    "options": {
+      "userName": "ItemBoys",
+      "password": "Iliketurtles1"
+    },
+    "type": "default"
+  },
+  "server": "itemserver.database.windows.net",
+  "options": {
+    "database": "itemhub",
+    "encrypt": true,
+    "trustServerCertificate": false,
+    "rowCollectionOnRequestCompletion": true
+  }
+}

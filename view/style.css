@@ -1,0 +1,17 @@
+.logon {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.oBruger {
+  position: absolute;
+  right: 450px;
+  top: 220px;
+}
+
+.registrerLink {
+  position: absolute;
+  right: 550px;
+  top: 325px;
+}
