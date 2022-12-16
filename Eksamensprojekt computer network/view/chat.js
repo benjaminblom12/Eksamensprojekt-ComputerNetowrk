@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 // Inspireret af Web dev simplified https://www.youtube.com/watch?v=rxzOqP9YwmM&t=868s
 
-const socket = io("http://localhost:8080");
+const socket = io("https://urchin-app-b5bos.ondigitalocean.app");
 const messageContainer = document.getElementById("message-container");
 const messageForm = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
