@@ -6,7 +6,7 @@ document.getElementById("createUser").addEventListener("click", (e) => {
     password: Passwordvalue,
   };
   e.preventDefault();
-  fetch("http://localhost:8080/register/user", {
+  fetch("/register/user", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
