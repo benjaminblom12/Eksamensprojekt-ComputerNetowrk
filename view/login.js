@@ -32,7 +32,7 @@ document
 
       // Opretter session og sender en videre til hovecsiden
 
-      await fetch("http://localhost:8080/session", {
+      await fetch("/session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ document
           window.alert("Der skete en fejl.");
         }
       });
-      await fetch("http://localhost:8080/login", {
+      await fetch("/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

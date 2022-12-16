@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     location.href = "/login.html";
   } else {
     //post request der sender Email + token, for at checke om session eksisterer
-    fetch("http://localhost:8080/checkSession", {
+    fetch("/checkSession", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(JSON.parse(localStorage.getItem("SessionInfo"))),
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 // Inspireret af Web dev simplified https://www.youtube.com/watch?v=rxzOqP9YwmM&t=868s
 
-const socket = io("http://localhost:8080");
+const socket = io("https://urchin-app-b5bos.ondigitalocean.app");
 const messageContainer = document.getElementById("message-container");
 const messageForm = document.getElementById("send-container");
 const messageInput = document.getElementById("message-input");
