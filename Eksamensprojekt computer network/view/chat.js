@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     location.href = "/login.html";
   } else {
     //post request der sender Email + token, for at checke om session eksisterer
-    fetch("http://localhost:8080/checkSession", {
+    fetch("/checkSession", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(JSON.parse(localStorage.getItem("SessionInfo"))),
